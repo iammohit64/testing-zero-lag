@@ -7,7 +7,6 @@ describe("ZeroLagTask", function () {
     [owner] = await ethers.getSigners();
     const ZeroLag = await ethers.getContractFactory("ZeroLagTask");
     zeroLag = await ZeroLag.deploy();
-    await zeroLag.deployed();
   });
 
   it("should allow user to submit task", async function () {
